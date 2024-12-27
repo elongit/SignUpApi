@@ -6,9 +6,9 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
 // Database connection details
 $host = 'localhost'; // Database host
-$dbname = 'test'; // Database name
-$username = 'root'; // Database username
-$password = 'oussama2002'; // Database password
+$dbname = 'yourr database'; // Database name
+$username = 'your database name name'; // Database username
+$password = 'your password'; // Database password
 
 // Connect to the database
 try {
@@ -58,7 +58,7 @@ if ($stmtEmail->rowCount() > 0) {
 }
 
 // SQL query to insert data into the users table
-$sqlInsert = "INSERT INTO signin (fullname, username, email, password) VALUES (:full_name, :username, :email, :password)";
+$sqlInsert = "INSERT INTO signin (full_name, username, email, password) VALUES (:full_name, :username, :email, :password)";
 try {
     $stmtInsert = $pdo->prepare($sqlInsert);
     $stmtInsert->bindParam(':full_name', $fullName);
