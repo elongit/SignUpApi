@@ -1,7 +1,7 @@
 # Instruction 
 
 # --- create a table in phpAdmine -- 
-CREATE TABLE users (
+CREATE TABLE signin (
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(255),
     username VARCHAR(255) UNIQUE,
